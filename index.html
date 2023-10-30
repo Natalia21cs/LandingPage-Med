@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Servicios Médicos</title>
+
+    <link rel="stylesheet" type="text/css" href="../Programacion Web/CSS/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Servicios Médicos</h1>
+        <p>Tu salud es nuestra prioridad</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Nuestros Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section id="servicios">
+            <h2>Nuestros Servicios Médicos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src=".././Programacion Web/Imagenes/servicio1.jpg" class="card-img-top" alt="Servicio 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Consulta General</h5>
+                            <p class="card-text">Ofrecemos consultas médicas generales para el diagnóstico y tratamiento de diversas condiciones de salud.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src=".././Programacion Web/Imagenes/servicio2.jpg" class="card-img-top" alt="Servicio 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Seguimiento y control</h5>
+                            <p class="card-text">Contamos con especialistas en diversas áreas médicas para atender tus necesidades específicas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src=".././Programacion Web/Imagenes/servicio3.jpg" class="card-img-top" alt="Servicio 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Urgencias médicas</h5>
+                            <p class="card-text">Realizamos exámenes clínicos y diagnósticos para un enfoque preciso en tu tratamiento médico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si deseas más información o agendar una cita, por favor completa el siguiente formulario:</p>
+            <form action="procesar.php" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" autofocus required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+
+        <section id="contacto">
+            <h2>WhatsApp</h2>
+            <form action="procesar.php" method="post">
+                <!-- ... (mismo contenido del formulario) -->
+            </form>
+            <button class="btn btn-whatsapp"><a href="https://api.whatsapp.com/send?phone=NUMERO_DE_TELEFONO" target="_blank">Contacto por WhatsApp</a></button>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Servicios Médicos</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
